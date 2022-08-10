@@ -40,6 +40,10 @@
 }
 
 
+footer{
+    text-align: center;
+    color: var(--color-grey4);
+}
 
 
 body {
@@ -48,10 +52,6 @@ body {
     font-size: 1rem;
     color: var(--color-white);
     transition: var(--transition);
-    footer{
-        text-align: center;
-        color: var(--color-grey4);
-    }
 }
 
 a{
