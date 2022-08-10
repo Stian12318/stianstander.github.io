@@ -40,8 +40,12 @@
 }
 
 footer {
+  border-top: var(--color-secondary) 2px;
+  border-top-style: double;
   text-align: center;
+  padding-top: 1rem;
   color: var(--color-grey4);
+  margin-top: 1rem;
 }
 
 body {
@@ -611,9 +615,16 @@ section {
 }
 
 /* Contact section */
+.contact-container {
+  margin: 0 0 3rem 0;
+}
+
 .contact-content-container {
   display: flex;
   padding-top: 3.5rem;
+}
+.contact-content-container a {
+  margin: 0 2rem 0 2rem !important;
 }
 .contact-content-container .left-contact {
   flex: 2;
@@ -644,6 +655,14 @@ section {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
+}
+.contact-content-container .left-contact .contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.contact-content-container .left-contact .contact-icons p {
+  margin: 0.6rem 1rem 0 0;
 }
 .contact-content-container .left-contact .contact-icon {
   display: flex;
@@ -704,7 +723,8 @@ section {
   justify-content: flex-start;
 }
 .contact-content-container .right-contact .submit-btn input {
-  color: var(--color-grey1);
+  font-weight: 600;
+  color: var(--color-grey2);
   background-color: inherit;
   border: none;
   padding: 10px 10px;
@@ -867,7 +887,7 @@ section {
     background-color: var(--color-grey5);
   }
   .controls .control {
-    margin: 0.6rem 1rem;
+    margin: 0.6rem 5px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -894,6 +914,9 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+  .contact-icons p {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -941,7 +964,13 @@ section {
     padding-bottom: 6rem;
   }
   .contact-info {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .contact-info i {
+    font-size: 0.7rem !important;
+  }
+  .contact-icons p {
+    display: none;
   }
   .section {
     padding: 2rem 2.5rem !important;

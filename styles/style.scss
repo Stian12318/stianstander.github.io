@@ -41,8 +41,12 @@
 
 
 footer{
+    border-top: var(--color-secondary) 2px;
+    border-top-style: double;
     text-align: center;
+    padding-top: 1rem;
     color: var(--color-grey4);
+    margin-top: 1rem;
 }
 
 
@@ -611,9 +615,15 @@ section{
 
 
 /* Contact section */
+.contact-container {
+    margin: 0 0 3rem 0;
+}
 .contact-content-container{
     display: flex;
     padding-top: 3.5rem;
+    a{
+        margin: 0 2rem 0 2rem !important;
+    }
     .left-contact{
         flex: 2;
         h4{
@@ -643,6 +653,14 @@ section{
                         font-size: 1.3rem;
                     }
                 }
+            }
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            p {
+                margin: 0.6rem 1rem 0 0;
             }
         }
         .contact-icon{
@@ -703,7 +721,8 @@ section{
             display: flex;
             justify-content: flex-start;
             input{
-                color: var(--color-grey1);
+                font-weight: 600;
+                color: var(--color-grey2);
                 background-color: inherit;
                 border:none;
                 padding: 10px 10px;

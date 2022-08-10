@@ -102,7 +102,7 @@
         width: 100%;
         background-color: var(--color-grey5);
         .control{
-            margin: .6rem 1rem;
+            margin: .6rem 5px;
         }
     }
 }
@@ -134,6 +134,11 @@
             .bg-text{
                 font-size: 4rem;
             }
+        }
+    }
+    .contact-icons {
+        p{
+            display: none;
         }
     }
 }
@@ -186,7 +191,15 @@
         padding-bottom: 6rem;
     }
     .contact-info {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
+        i {
+            font-size: 0.7rem !important;
+        }
+    }
+    .contact-icons {
+        p{
+            display: none;
+        }
     }
 
     .section{
