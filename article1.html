@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="main-content">
+    <div class="container article1">
+        <div class="btn-container"><a class="main-btn" href="index.html"><span class="btn-text">Go Back</span></a>
+        </div>
+
+        <div class="main-title">
+            <h2>Web Development and<br> <span class="text">Data Science</span></h2>
+        </div>
+
+        <div class="article-text">
+            <p><span class="text">Web Development has always been much more than setting up a few pages on a website.
+                    But now it can become even more...</span> <br> Data Science, according to a few studies, will become
+                more and more
+                important up
+                until the year 2030. It is a mathematical skill and it is in high demand all over the world.</p>
+            <h3 class="text">What is Data Science and how I would use it?</h3>
+            <p>Let's say a Solar Panel Company wants to develop an app that proves the quality
+                of their products. This company is a start up and is looking for new talent to develop this app but
+                wants to spend as little money as possible. They might end up splitting up the work between a
+                small team of developers and data scientists but they're a small company.<br><br>
+                The goal is to build an app that also demonstrates how much power their Panels can make in the right
+                circumstances. As a web developer you can use resources like <a
+                    href="https://www.mathworks.com/products/matlab/getting-started.html?s_eid=PSM_15028">MatLab</a>
+                which doesn't do the work for you but saves you from learning several brand new languages like Python or
+                R.</p>
+            <p>Or you could use PyCharm or Jupyter Notebooks that work with Python. <a
+                    href="https://www.freecodecamp.org/news/python-projects-for-beginners/">FreeCodeCamp.org</a> has
+                some of the best resources for quickly picking up some new skills.</p>
+            <p>After learning some new skills you can help companies with projects that you previously had to design
+                with a team.</p>
+            <!-- REMEMBER TO MAKE IMAGES AND PAGE FULLY RESPONSIVE FOR MOBILE -->
+            <div class="steps">
+                <ul>
+                    <h2>MatLab Project:</h2>
+                    <p><strong>Goal:</strong> Analyse and predict generated power at maximum sun exposure.</p>
+                    <p><strong>Location</strong>: Natick, Massachusetts.</p>
+                    <p>Let's use MatLab for this project and focus on predicting the power generated.<br> We'll do this
+                        by using data collected from a business with solar panels in an excel file. The excel file gives
+                        the recorded data of a very sunny
+                        day which makes it ideal for predicting max power output.</p>
+                    <li>
+                        <h3>Step 1:</h3><br>
+                        <img src="images\Slide2.png">
+                        <p>First we open up MatLab in the <a href="https://matlab.mathworks.com/">browser</a> and then
+                            we
+                            upload <a href="downloads\SolarArrayProduction.xlsx"> SolarArrayProduction.xlsx </a> in our
+                            MatLab.</p>
+                        <img name="slide1" id="slide1" src="images\slide1.png">
+                        <p>Above is a mathematical equation that is commonly used to calculate how much
+                            energy is
+                            produced
+                            in solar panels. To me this is new as well so don't feel demotivated.</p>
+                    </li>
+                    <li>
+                        <h3>Step 2:</h3>
+                        <p>Type this into MatLab #1:</p>
+                        <img src="images\slide4.png" title="Type this into MatLab">
+                        <p>We set up a few "constants" or variables to use in our calculations. This will allow
+                            us to build the previously mentioned formula in MatLab.<br>
+                            The above variables are called <strong>dec</strong> (declination of the sun) and
+                            <strong>lat</strong>
+                            (latitude of the solar
+                            panels). <strong>lat</strong> and <strong>dec</strong> are values that we can look up.
+                            <strong>lat</strong>
+                            depends on the
+                            latitude of the
+                            location. See below: <br><img src="images\slide4.1.png"> <br>
+                            And <strong>dec</strong> is simply how high the sun gets on a given day. We'll use a very
+                            sunny day to calculate the max output.
+                        </p>
+                        <p>Type this into MatLab #2:</p>
+                        <img src="images\slide5.png" title="Type this into MatLab">
+                        <p>We then change the degrees of the variables into <strong>radians</strong> since that is
+                            required for the above formula to work.</p>
+                        <p class="em"><em>Perhaps by now you're noticing why MatLab is
+                                useful, it processes math in a familiar way and has several saved libraries of functions
+                                and
+                                tools for you to use without coding them yourself.</em></p>
+                        <p>Type this into MatLab #3:</p>
+                        <img src="images\slide6.png" title="Type this into MatLab">
+                        <p><strong>t</strong>(time) will be used as the x-axis in our first model. The modelling of data
+                            is
+                            quite an important step and will take some time to get used to whenever working with new
+                            technology. <strong>t</strong> will be broken up into 15min increments (hence the 0.25) and
+                            will continue from 5:30am (hence the 5.5) till 8pm (hence the 20).
+                        <p>Next we should calculate the <strong>LST</strong> (local solar time) as that is what the
+                            formula requires. Our
+                            time and LST is not the same so
+                            another calculation is needed.</p>
+                        <p>Type this into MatLab #4:</p>
+                        <img src="images\slide7.png" title="Type this into MatLab">
+                        </p>
+                        <p><a href="https://www.pveducation.org/pvcdrom/properties-of-sunlight/solar-time">LST</a> does
+                            not take into account daylight savings or local time zones. That is why we make it
+                            equal to <strong>t</strong> but subtract 1 hour for daylight savings and then we add 14.6
+                            mins per 60mins for time correction. Time correction can be calculated like this:
+                            <br><em>4*(75-71.35) = 14.6 minutes.</em><br>
+                            It says 4 multiplies by (longitude of the current time zone minus longitude of solar
+                            panels). And as stated in
+                            the above LST link that I shared "The factor of 4 minutes comes from the fact that the Earth
+                            rotates 1° every 4 minutes".
+                        </p>
+                        <p>The maths you see above can be found quite easily by simply searching for formulas online.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Step 3:</h3>
+                        <p>Type this into MatLab #5:</p>
+                        <img src="images/slide8.png" title="Type this into MatLab #5">
+                        <p>Now we'll type out the formula we spoke about
+                            <a href="#slide1"> here</a>. The formula will use radiances except for one section that uses
+                            degrees. MatLab has special functions for scenarios where sin, cos or tan needs to use
+                            degrees and in this case it's simply called <strong>cosd</strong>:<br>
+                            <img src="images\slide10.png"><br>So we've loaded the data with the formula, we
+                            can then show it using a
+                            <strong>plot(x-axis, y-axis)</strong> function. This should show up in your workspace:
+                        </p>
+                        <img src="images\slide9.png">
+                        <p>The above <strong>plot</strong> shows that mornings and evenings have the least amount of sun
+                            exposure and the afternoon the most. It's never 100% because the sun is never directly above
+                            this location.</p>
+                        <p>Type this into MatLab #6:</p>
+                        <img src="images\slide11.png" title="Type this into MatLab #6" alt="slide11">
+                        <p>Let's set up <strong>S_inc</strong>. This tells us the effect of the atmosphere on sun
+                            exposure. So the best exposure would be when the sun is at it's peak in the afternoon.
+                            That's when the sun is right on top of the building and passes through the shortest distance
+                            of atmosphere:</p>
+                        <img title="sun exposure" src="images\slide12.png">
+                        <p>Below you can find the actual formula that you either know about or had to scoure the
+                            internet for:</p>
+                        <img src="images\slide11.1(1).png" alt="slide11.1">
+                        <p>Type this into MatLab #7:</p>
+                        <img src="images\slide13.png" alt="slide12" title="Type this into MatLab #7">
+                        <p>First we calculate the max power generated using the first line and then we add in the
+                            <strong>min</strong> which tells the model it can't go past 207kW since that's the max
+                            output of the inverters in the solar panel. To make the graph visible we will once again use
+                            <strong>plot(x,y):</strong>
+                        </p>
+                        <img src="images\slide14.png" alt="graph">
+                        <p>You can add in the above axis titles and heading by clicking on the graph and adding it in
+                            directly. No coding needed.</p>
+                        <p>Type this into MatLab #8:</p>
+                        <img src="images\slide15.png" title="Type this into MatLab #8:" alt="code">
+                        <p>Finally, it's time to import the previously collected data from here: <a
+                                href="downloads\SolarArrayProduction.xlsx">SolarArrayProduction.xlsx</a>. This includes
+                            two sets of data from two sets of Solar Panels (AH3 and LSParking). We'll only be using
+                            <strong>AH3</strong>.
+                            Up until now we calculated the max kW generated by a section of solar panels from 5:30 till
+                            20:00.<br>
+                            But now we'll import the excel file and eventually compare the two sets. They should be
+                            fairly similar. This will prove the effectiveness of the solar panels.
+                        </p>
+                        <img src="images\slide16.png" alt="slide16">
+                        <p>In the next line we type out another <strong>plot(x,y):</strong> to once again create a
+                            graph. This graph wont take a single day into account like our calculations so we'll have to
+                            figure out how to look at one day at a time in the next section.</p>
+                    </li>
+                    <li>
+                        <h3>Step 3:</h3>
+                        <p>Type this into MatLab #6:</p>
+                        <img src="images\slide17.png" alt="slide17" title="Type this into MatLab #9">
+                        <p>Now let's zoom in on specific day and see how much it resembles our calculations. For that we
+                            have to specify where on the <strong>x</strong> and <strong>y-axis</strong> the machine has
+                            to look. We'll type in <strong>xlim</strong> for the <strong>x-axis</strong> and proceed to
+                            specify the year, month and day. To include the whole day of the 21st of June we'll have
+                            specify that we want the machine to show us everything that was recorded from the start of
+                            the 21st till the start of the 22nd.</p>
+                        <p>For <strong>y</strong> we'll do something similar, although no function is needed as the data
+                            is only numerical and we want all of it so we say from -5 till 220 kW. This is because we
+                            want the graph to show all the data with some extra space to make it more readable.</p>
+                        <img src="images\slide18.png" alt="slide18">
+                        <p>Above we have the result of running the previous code.</p>
+                        <p>Type this into MatLab #10</p>
+                        <img src="images\slide19.png" alt="slide19" title="Type this into MatLab #7">
+                        <p>We checked the 21st but as you can see, it wasn't a very sunny day. Now we'll do the exact
+                            same code but for a moer sunny day, the 26th of June.</p>
+                        <img src="images\slide20.png" alt="slide20">
+                        <p>That's a pretty similar looking graph but we can't be sure just yet. We can see things are
+                            looking good but we can't prove anything yet. Ideally we should match these two models up
+                            and create a graph to clearly show the similarities.</p>
+                        <p>Type this into MatLab #11</p>
+                        <img src="images\slide21.png" alt="slide21" title="Type this into MatLab #11">
+                        <p>To make sure the two graphs can fit we have to make sure their <strong>axis</strong> are the
+                            same. Above we are changing the month of June into a grid (or matrix) of days and times. The
+                            data was collected 4 times an hour for 24 hours for 30 days so 4*24 = 96 times for 30 days.
+                            Now each day is a column. Below we're calling the 26th of June again:
+                        </p>
+                        <p>Type this into MatLab #12</p>
+                        <img src="images\slide22.png" alt="slide22" title="Type this into MatLab #12">
+                        <p>We have the day but each day is also divided into time stamps. We'll create the range for a
+                            <strong>full day</strong> from 0:30 till
+                            23:30, starting at 0.
+                        </p>
+                        <p>Type this into MatLab #13</p>
+                        <img src="images\slide23.png" alt="slide23" title="Type this into MatLab #13">
+                        <p>Below you can see the result of the above <strong>plot</strong> where we inserted a character
+                            (the dot or ".-")
+                            at each time stamp:</p>
+                        <img src="images\slide24.png" alt="slide24">
+                    </li>
+                    <li>
+                        <h3>Step 4:</h3>
+                        <p>Now to match the graphs to prove effectiveness.</p>
+                        <p>Type this into MatLab #14</p>
+                        <img src="images\slide25.png" alt="slide25" title="Type this into MatLab #14">
+                        <p>We start by using <strong>plot</strong> and then adding in the two graphs. First we add the
+                            collected data of the 26th of June with <strong>tfullday,dayofinterest,'.-'</strong> and
+                            then our calculated max kW for a day with <strong>t,production_theory</strong> and seperate
+                            them wih a comma.</p>
+                        <img src="images\slide26.png" alt="slide26">
+                        <p>Above we can see the final result to prove that these solar panels ,<strong>AH3</strong>, are
+                            performing optimally. And just to remind you again all of these labels in these graphs can
+                            either be coded or labeled.</p>
+                    </li>
+                </ul>
+                <h4>In my next article I'll use Python for another Data Science project.<br>Thanks for reading!</h4>
+            </div>
+        </div>
+        </p>
+        <div class="btn-container"><a class="main-btn" href="index.html"><span class="btn-text">Go Back</span></a>
+        </div>
+    </div>
+    <footer>Portfolio made by Stian Stander</footer>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

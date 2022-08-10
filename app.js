@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.controls');
+const sectBtns = document.querySelectorAll('.controls', 'controlz');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
@@ -42,3 +42,4 @@ function PageTrans() {
 
 
 PageTrans()
+

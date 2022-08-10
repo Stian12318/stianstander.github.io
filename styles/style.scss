@@ -48,6 +48,10 @@ body {
     font-size: 1rem;
     color: var(--color-white);
     transition: var(--transition);
+    footer{
+        text-align: center;
+        color: var(--color-grey4);
+    }
 }
 
 a{
@@ -174,6 +178,8 @@ section{
         pointer-events: none;
     }
 }
+
+
 
 
 /* header content */
@@ -569,6 +575,36 @@ section{
                 line-height: 2rem;
                 padding-bottom: 1rem;
             }
+        }
+    }
+}
+
+.article1 {
+    margin: 2rem;
+    .btn-container {
+        justify-content: left;
+        margin: 2rem;
+    }
+    .em{
+        border: var(--color-secondary) 0.1rem;
+        border-style:solid;
+        padding: 0.5rem;
+    }
+    a{
+        color: var(--color-secondary);
+        font-style: italic;
+    }
+    p, li{
+        margin: 1rem;
+    }
+    .article-text {
+        width: 60%;
+        margin: auto;
+        .text{
+            display: flex;
+            justify-content: center;
+            color: var(--color-secondary);
+            padding: 1rem;
         }
     }
 }
