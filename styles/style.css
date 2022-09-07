@@ -732,6 +732,12 @@ section {
 }
 
 /* independent components */
+.strong {
+  color: var(--color-secondary) !important;
+  font-style: italic;
+  cursor: pointer;
+}
+
 .btn-container {
   display: flex;
   align-self: flex-start;
